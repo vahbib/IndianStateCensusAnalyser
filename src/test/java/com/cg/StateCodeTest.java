@@ -12,7 +12,7 @@ public class StateCodeTest {
 
         @Test
         public void GivenStateCodeCsvFile_If_DoesntExist_ShouldThrowStateException() throws IOException {
-            final String STATECODE_CSVFILE= "F:\\Java_Workspace\\StateCensusData.csv";
+            final String STATECODE_CSVFILE= "F:\\Java_Workspace\\StateCode.csv";
             final String WRONG_FILE = "/wrong.txt";
             try {
                 StateCode.openCsvBuilder(WRONG_FILE, StateCodeAnalyser.class);
