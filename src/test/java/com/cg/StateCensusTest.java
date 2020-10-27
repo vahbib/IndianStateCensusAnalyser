@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class StateCensusTest {
     @Test
-    public void GivenTheStateCensusCsvFile_FileExtIncorrect_ShouldThrowStateException() throws IOException {
+    public void GivenTheStateCensusCsvFile_DelimiterIncorrect_ShouldThrowStateException() throws IOException {
         final String STATECENSUS_CSVFILE= "F:\\Java_Workspace\\StateCensusData.csv";
         final String WRONG_FILE = "/wrong.txt";
         try {
