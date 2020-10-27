@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.io.IOException;
 
 public class StateCensusTest {
+    
     @Test
     public void GivenStateCensusCsvFile_If_DoesntExist_ShouldThrowStateException() throws IOException {
         final String STATECENSUS_CSVFILE= "F:\\Java_Workspace\\StateCensusData.csv";
