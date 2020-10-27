@@ -11,7 +11,7 @@ public class StateCodeTest {
         final String STATECODE_CSVFILE= "F:\\Java_Workspace\\StateCensusData.csv";
         final String WRONG_FILE = "/wrong.txt";
         try {
-            int count = StateCode.openCsvBuilder(STATECENSUS_CSVFILE, StateCodeAnalyser.class);
+            int count = StateCode.openCsvBuilder(STATECODE_CSVFILE, StateCodeAnalyser.class);
         } catch (StateException e) {
             e.printStackTrace();
             Assert.assertEquals(StateException.StateExceptionType.INCORRECT_DATA_ISSUE, e.type);
