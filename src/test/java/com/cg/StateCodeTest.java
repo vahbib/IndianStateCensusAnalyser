@@ -8,7 +8,7 @@ import java.io.IOException;
 public class StateCodeTest {
     @Test
     public void GivenTheStateCodeCsvFile_FileExtIncorrect_ShouldThrowStateException() throws IOException {
-        final String STATECODE_CSVFILE= "F:\\Java_Workspace\\StateCensusData.csv";
+        final String STATECODE_CSVFILE= "F:\\Java_Workspace\\StateCode.csv";
         final String WRONG_FILE = "/wrong.txt";
         try {
             int count = StateCode.openCsvBuilder(STATECODE_CSVFILE, StateCodeAnalyser.class);
